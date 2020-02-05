@@ -1,12 +1,11 @@
 #include <stdio.h>
-/*
- *use puts not printf
+/**
+ * main - prints a string using puts
  *
- *
- *
-*/
-
-int main (void){
+ * Return: 0 (Success)
+ */
+int main(void)
+{
   puts("\"Programming is like building a multilingual puzzle");
   return(0);
- }
+}
