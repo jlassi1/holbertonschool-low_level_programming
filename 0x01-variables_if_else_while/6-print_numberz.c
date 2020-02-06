@@ -5,7 +5,7 @@
  * Description:prints all single digit numbers of base 10 starting from 0
  * Return: void
  */
-	
+
 int main(void)
 {
 	int x;
@@ -15,6 +15,6 @@ int main(void)
 		putchar(x);
 	}
 	putchar('\n');
-	
+
 	return (0);
 }
