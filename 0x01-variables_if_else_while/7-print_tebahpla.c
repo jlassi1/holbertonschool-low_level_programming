@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - main function
  * Description:prints the alphabet in lowercase
@@ -16,3 +15,4 @@ int main(void)
 		putchar('\n');
 	return (0);
 }
+
