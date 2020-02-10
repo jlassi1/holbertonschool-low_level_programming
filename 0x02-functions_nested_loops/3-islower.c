@@ -1,22 +1,20 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ *islowerif: c is lowercase
+ *Description:Write a function that checks for lowercase character.
+ * Return:1
+ * else returne:0
  */
 int _islower(int c)
 {
-
-if(c >= 97 && c <= 122)
-
+if (c >= 97 && c <= 122)
 {
 return (1);
-
 }
-else 
+else
 {
 return (0);
 }
-	
+
 }
