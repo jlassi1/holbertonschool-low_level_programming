@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_alphabet_x10 - prints 10 times the alphabet, in lowercase, followed by a new line.
  *
  * Return: Always 0.
  */
