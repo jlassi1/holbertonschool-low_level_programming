@@ -1,0 +1,1 @@
+learn to use putchar in C language 
