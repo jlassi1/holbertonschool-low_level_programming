@@ -15,19 +15,39 @@ for (j = 0 ; j < 10 ; j++)
 {
 
 k = j * i;
-if (!(k >= 0 && k < 10))
-_putchar(k / 10 + '0');
+if (k < 10 && j < 9)
+{
+
 _putchar(k % 10 + '0');
-if (j != 9)
 _putchar(44);
 _putchar(' ');
-if ((i * (j + 1)) / 10 == 0)
+_putchar(' ');
+}
+
+else if (k >= 10 && j < 9)
+{
+_putchar(k / 10 + '0');
+_putchar(k % 10 + '0');
+_putchar(44);
 _putchar(' ');
 
 }
+else if (k / 10 != 0 && j == 9)
+{
+_putchar(k / 10 + '0');
+_putchar(k % 10 + '0');
+}
+else 
+{
+
+_putchar(k / 10 + '0');
+
+}
+
+}
+
 
 _putchar('\n');
 
 }
-
 }
