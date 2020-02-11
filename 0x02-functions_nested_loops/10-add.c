@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- *add - prints every minute.
- *@i, @j : time
- *Description: prints every minute of the day of Jack Bauer.
- * Return: void
+ *add - Write a function that adds two integers and returns the result.
+ *@i : integers
+ *@j : integers
+ *
+ * Return: x
  */
 
 int add(int i, int j)
