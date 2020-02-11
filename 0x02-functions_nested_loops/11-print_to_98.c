@@ -10,25 +10,28 @@
 
 void print_to_98(int n)
 {
-
-for (;n >= 98; n--)
+int i;
+if (n > 98)
 {
-	printf("%d", n);
-if (n != 98)
-{
-	printf(", ");
+	for (i = n; i > 97; i--)
+	{
+		printf("%d", i);
+		if (i != 98)
+		{
+			printf(", ");
+		}
+	}
 }
- }
-
-printf("\n");	
-	
-for (;n <= 98; n++)
+else	
 {
-	printf("%d", n);
-if (n != 98)
-{
-	printf(", ");
-}
+	for (i = n; i <= 98; i++)
+	{
+		printf("%d", i);
+		if (i != 98)
+		{
+			printf(", ");
+		}
+	}
 }
 printf("\n");
 	
