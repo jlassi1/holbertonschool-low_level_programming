@@ -1,11 +1,10 @@
 #include "holberton.h"
 
 /**
- *print_sign(int n) print the digne of number.
- *int n
+ *print_sign - print the digne of number.
+ *@n : sign of a number
  *Description:Write a function that prints the sign of a number.
- * Return:1
- * else returne:0
+ * Return:1 else return:0
  */
 int print_sign(int n)
 {
