@@ -22,7 +22,7 @@ if (n > 98)
 		}
 	}
 }
-else	
+else
 {
 	for (i = n; i <= 98; i++)
 	{
@@ -34,5 +34,5 @@ else
 	}
 }
 printf("\n");
-	
+
 }
