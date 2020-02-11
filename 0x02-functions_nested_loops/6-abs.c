@@ -7,23 +7,24 @@
  * Return:1
  * else returne:0
  */
-int print_sign(int n)
+int _abs(int n)
 {
 
 if (n > 0)
 {
-_putchar(43);
-return (1);
+_putchar(n);
+return (0);
 
 }
 else if (n == 0)
 {
-_putchar(48);
-return (0);
+_putchar(n);
+return (1);
 }
 else
 {
-_putchar(45);
-return (-1);
+n = -1*n;
+_putchar(n);
+return (1);
 }
 }
