@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main()
+int main(void)
 {
 int n, i;
 n = 0;
@@ -12,6 +12,6 @@ n += i;
 }
 }
 printf("%d\n", n);
-return(0);
+return (0);
 
 }
