@@ -27,9 +27,7 @@ n[i] = n[i - 2] + n[i - 1];
 }
 if (n[i] % 2 == 0)
 {
-if (i != 32)
-printf("%ld, ", n[i]);
-else
+
 printf("%ld\n", n[i]);
 }
 
