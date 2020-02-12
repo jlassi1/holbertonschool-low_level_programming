@@ -9,15 +9,13 @@
 int main(void)
 {
 
-long int n[35];
+long int n[34];
 int i;
-for (i = 1; i <= 32; i++)
+for (i = 2; i <= 33; i++)
 {
-if (i == 1)
-{
-n[1] = 1;
-}
-else if (i == 2)
+
+
+ if (i == 2)
 {
 n[2] = 2;
 }
