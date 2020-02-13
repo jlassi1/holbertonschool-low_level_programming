@@ -1,4 +1,4 @@
-#include "holberton.h"
+
 #include <stdio.h>
 /**
  * main-prints a Fizz mult of 3 Buzz mult of 5 and FizzBuzz mult 15.
@@ -27,5 +27,6 @@ printf("%i ", i);
 
 }
 printf("\n");
+return (0);
 
 }
