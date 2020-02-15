@@ -19,10 +19,10 @@ n = n / i;
 x = i;
 }
 else if (i == 2)
-{
+{git
 i++;
 }
-else 
+else
 i += 2;
 }
 printf("%i \n", x);
