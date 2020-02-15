@@ -8,7 +8,7 @@ void print_number(int n)
 {
 int i, j, a[10];
 j = n;
-if (n < 0)
+if (n < 0 )
 {
 j = -n;
 _putchar('-');
@@ -25,11 +25,8 @@ while (i > 0)
 _putchar(a[i - 1] + '0');
 i--;
 }
-
 }
+
 else
 _putchar('0');
-
-
-
 }
