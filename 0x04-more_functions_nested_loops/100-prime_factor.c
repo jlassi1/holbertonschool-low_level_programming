@@ -8,21 +8,22 @@
  */
 int main(void)
 {
-long int n = 612852475143;
-int i = 2, x;
-
+long int n = 612852475143, i = 3;
+int  x;
+while (n % 2 == 0)
+{
+x = 2;
+n = n / 2;
+}
 while (i < n)
 {
 if (n % i == 0)
 {
 n = n / i;
+
 x = i;
+
 }
-else if (i == 2)
-{
-i++;
-}
-else
 i += 2;
 }
 printf("%i \n", x);
