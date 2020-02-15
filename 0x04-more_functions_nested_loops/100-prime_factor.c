@@ -18,10 +18,12 @@ if (n % i == 0)
 n = n / i;
 x = i;
 }
-else
+else if (i == 2)
 {
 i++;
 }
+else 
+i += 2;
 }
 printf("%i \n", x);
 return (0);
