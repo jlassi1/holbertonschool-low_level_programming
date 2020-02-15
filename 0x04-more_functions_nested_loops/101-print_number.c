@@ -6,8 +6,7 @@
  */
 void print_number(int n)
 {
-int i, j;
-int a[10];
+int i, j, a[10];
 j = n;
 if (n < 0)
 {
