@@ -25,11 +25,11 @@ while (i > 0)
 _putchar(a[i - 1] + '0');
 i--;
 }
-_putchar('\n');
+
 }
 else
 _putchar('0');
-_putchar('\n');
+
 
 
 }
