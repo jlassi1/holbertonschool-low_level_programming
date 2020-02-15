@@ -6,14 +6,14 @@
  *
  * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
 long int n = 612852475143;
 int i = 2, x;
 
 while (i < n)
 {
-if ( n % i == 0)
+if (n % i == 0)
 {
 n = n / i;
 x = i;
@@ -24,5 +24,5 @@ i++;
 }
 }
 printf("%i \n", x);
-return(0);
+return (0);
 }
