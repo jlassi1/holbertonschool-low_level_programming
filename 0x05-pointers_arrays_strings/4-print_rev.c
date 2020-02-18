@@ -12,9 +12,11 @@ while (s[i] != '\0')
 {
 i++;
 }
+i = i - 1;
 for (j = 0; j <= i; j++)
+{
 _putchar(s[i - j]);
-
+}
 _putchar('\n');
 
 
