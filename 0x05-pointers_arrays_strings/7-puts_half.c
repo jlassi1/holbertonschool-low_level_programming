@@ -12,11 +12,11 @@ while (str[i] != '\0')
 {
 i++;
 }
-if ( i % 2 == 0)
+if (i % 2 == 0)
 {
 x = i / 2;
 }
-else 
+else
 {
 x = i / 2 + 1;
 }
