@@ -1,23 +1,19 @@
 #include "holberton.h"
 /**
- *puts2- prints every other character starting with the first character
- *@str : char
- *
+ * _strcpy - copies the string pointed
+ *@src : pointer
+ *@dest : pointer
+ *Return: dest
  */
 char *_strcpy(char *dest, char *src)
 {
-char p[509];
-int i =0, j;
-src = &p;
-while (p[i] <= '\0')
+int i, n = 0;
+while (src[n] != '\0')
+n++;
+for (i = 0; i < n ; i++)
 {
-i++;
+dest[i] = src[i];
 }
-for (j = 0; j <= i; j++)
-{
-src[j] = p[j];
-}
-dest = &src[j];
 return (dest);
 
 }
