@@ -20,7 +20,7 @@ int main(void)
     printf("%d\n", n);
     n = _atoi("0");
     printf("%d\n", n);
-    n = _atoi("Suite 402");
+    n = _atoi("Suite 00123456789065464");
     printf("%d\n", n);
     n = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
     printf("%d\n", n);
