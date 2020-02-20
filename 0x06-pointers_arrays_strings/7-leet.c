@@ -7,17 +7,18 @@
 char *leet(char *s)
 {
 int i = 0, j = 0;
-int num[] = {4, 4, 3, 3, 0, 0, 7, 7, 1, 1};
-char alpha [] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-
+char a[15] = {'a', 'A', '4', 'e', 'E', '3', 'o', 'O', '0', 't', 'T', '7', 'l', 'L', '1'};
 
 for (i = 0; s[i] != '\0'; i++)
 {
-for (j = 0; alpha[j] != '\0'; j++)
+for (j = 0; a[j] != '\0'; j++)
 {
-if (s[i] == alpha[j])
-s[i] = num[j] + '0';
+if (s[i] == a[j] && (j != 2 && j != 5 && j != 8 && j != 11 && j != 14))
+{
+s[i] = a[j + 1];
+i--;
 
+}
 else
 continue;
 }
