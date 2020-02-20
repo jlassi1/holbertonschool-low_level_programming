@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ *main - function of standard library
+ *Return: void
+ */
 int main(void)
 {
 int n;
@@ -16,7 +19,7 @@ p = &n;
    * - only one statement
    * - you are not allowed to code anything else than this line of code
    */
-p[] = 98;
+p[n] = 98;
   /* ...so that this prints 98\n */
 printf("a[2] = %d\n", a[2]);
 return (0);
