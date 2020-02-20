@@ -4,10 +4,10 @@
  *@dest: char
  *@src: char
  *@n: integer
- *Returne: dest
+ *Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
-{ 
+{
 int i = 0, j = 0, k = 0;
 
 
@@ -17,7 +17,7 @@ while (dest[i] != '\0')
 i++;
 }
 
-for (k = i; k < i +n; k++)
+for (k = i; k < i + n; k++)
 {
 
 dest[k] = src[j];
