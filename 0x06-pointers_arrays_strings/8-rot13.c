@@ -19,8 +19,6 @@ if (s[i] == a[j])
 s[i] = rot[j];
 break;
 }
-else
-s[i] = s[i];
 
 }
 
