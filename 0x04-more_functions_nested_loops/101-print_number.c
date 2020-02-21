@@ -9,7 +9,7 @@ void print_number(int n)
 int i, a[10];
 unsigned int j = 0;
 j = n;
-if (n < 0 )
+if (n < 0)
 {
 j = -n;
 _putchar('-');
