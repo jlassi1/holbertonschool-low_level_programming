@@ -6,19 +6,21 @@
  */
 void print_number(int n)
 {
-int i, j, a[10];
-j = n;
+int i, a[10];
+unsigned int u = 0;
+
+u = n;
 if (n < 0)
 {
-j = -n;
+u = -n;
 _putchar('-');
 }
 if (n != 0)
 {
-for (i = 0; j > 0; i++)
+for (i = 0; u > 0; i++)
 {
-a[i] = j % 10;
-j = j / 10;
+a[i] = u % 10;
+u = u / 10;
 }
 while (i > 0)
 {
