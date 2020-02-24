@@ -19,8 +19,7 @@ s = &s[i];
 return (s);
 break;
 }
-else
-continue;
+
 }
 
 return (0);
