@@ -23,5 +23,5 @@ else
 continue;
 }
 
-return ("NULL");
+return (0);
 }
