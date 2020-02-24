@@ -3,6 +3,7 @@
 /**
  *print_chessboard - function that prints the chessboard.
  *@a: char
+ *@size: int
  *Return: void
  */
 
