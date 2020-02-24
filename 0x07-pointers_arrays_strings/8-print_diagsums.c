@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- *print_chessboard - function that prints the chessboard.
+ *print_diagsums - function that prints the chessboard.
  *@a: char
  *@size: int
  *Return: void
