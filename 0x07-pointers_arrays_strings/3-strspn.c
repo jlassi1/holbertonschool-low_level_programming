@@ -21,11 +21,11 @@ if (s[i] == accept[j])
 n = n + 1;
 break;
 }
-
 }
+
 if (s[i] != accept[j])
 break;
-
 }
+
 return (n);
 }
