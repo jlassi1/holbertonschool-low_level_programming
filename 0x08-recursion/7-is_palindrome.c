@@ -15,8 +15,8 @@ return (1 + _strlen_recursion(++s));
 
 /**
  *palindrome_check - fun
- *@ch: char
- *@l: integer
+ *@s: char
+ *@i: integer
  *Return: 0 or 1 or result of check
  */
 int palindrome_check(char *s, int i)
@@ -31,7 +31,7 @@ return (0);
 }
 
 /**
- *is_palindrome - function that returns 1 if a string is a palindrome and 0 if not
+ *is_palindrome - returns 1 if a string is a palindrome and 0 if not
  *@s: string
  *Return: 1 if palindrome and 0 if is not
  */
