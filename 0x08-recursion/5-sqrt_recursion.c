@@ -8,7 +8,7 @@
 int power(int n, int i);
 int _sqrt_recursion(int n)
 {
-return (power(n, 2));
+return (power(n, 1));
 }
 
 
