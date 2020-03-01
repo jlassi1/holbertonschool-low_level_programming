@@ -25,8 +25,10 @@ if (i == argc)
 
 printf("%d\n", x);
 
-else
+if (i != argc)
 printf("Error\n");
+
+
 return (0);
 }
 
