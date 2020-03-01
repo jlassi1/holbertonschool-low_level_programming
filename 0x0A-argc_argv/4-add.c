@@ -21,7 +21,7 @@ if (!(atoi(argv[i])))
 break;
 
 }
-if (i == argc)
+if (i == argc )
 
 printf("%d\n", x);
 
