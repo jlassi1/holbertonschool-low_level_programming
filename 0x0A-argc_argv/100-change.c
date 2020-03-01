@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* main(:)? (- argc argv)?
+* main- main function
 *
 * @argc: int
 * @argv: pointer char
