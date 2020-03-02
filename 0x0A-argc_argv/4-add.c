@@ -12,23 +12,26 @@
 int main(int argc, char *argv[])
 {
 unsigned int x = 0;
-int i;
-/*argc = strlen(*argv);*/
+int i, j;
+
+if (argc > 1)
+{
 for (i = 1; i < argc ; i++)
 {
-
-x += atoi(argv[i]);
-
-
-if (!(atoi(argv[i])))
-break;
-}
-if (i == argc)
-
-printf("%d\n", x);
-
-if (i != argc)
+for (j = 0; argv[i][j] != '\0'; j++)
+{
+if (argv[i][j] < 48 || argv[i][j] > 57)
+{
 printf("Error\n");
+return (1);
+}
+x += atoi(argv[i]);
+}
+}
+printf("%d\n", x);
+}
+else 
+printf("0\n");
 
 
 return (0);
