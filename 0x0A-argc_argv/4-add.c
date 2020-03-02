@@ -25,12 +25,13 @@ if (argv[i][j] < 48 || argv[i][j] > 57)
 printf("Error\n");
 return (1);
 }
+else
 x += atoi(argv[i]);
 }
 }
 printf("%d\n", x);
 }
-else 
+else
 printf("0\n");
 
 
