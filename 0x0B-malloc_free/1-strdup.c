@@ -14,15 +14,16 @@ unsigned int i, j = 0;
 while (str[j] != '\0')
 j++;
 
-if (j == 0)
-return (0);
-
 array = malloc(j * sizeof(char));
+if (j == 0 || array == NULL)
+return (NULL);
+
+
 for (i = 0; i <= j; i++)
 {
-array[i] = *str;
+array[i] = str[i];
 }
-free (array);
+
 return (array);
 
 }
