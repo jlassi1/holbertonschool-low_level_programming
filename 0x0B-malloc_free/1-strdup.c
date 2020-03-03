@@ -14,8 +14,8 @@ unsigned int i, j = 0;
 while (str[j] != '\0')
 j++;
 
-array = malloc(j *sizeof(char));
-if (j == 0 || array == NULL || j > 16711568)
+array = malloc((j + 1) *sizeof(char));
+if (j == 0 || array == NULL)
 return (NULL);
 
 
