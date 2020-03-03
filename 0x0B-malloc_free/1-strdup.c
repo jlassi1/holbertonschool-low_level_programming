@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *_strdup - function that returns a pointer to a newly allocated space in memory
+ *_strdup - returns a pointer to a newly allocated space in memory
  *@str : char
  *Return: char
  */
@@ -14,8 +14,8 @@ unsigned int i, j = 0;
 while (str[j] != '\0')
 j++;
 
-array = malloc(j * sizeof(char));
-if (j == 0 || array == NULL)
+array = malloc(j *sizeof(char));
+if (j == 0 || array == NULL || size > 16711568)
 return (NULL);
 
 
