@@ -1,0 +1,1 @@
+learn about malloc, free and what is the difference between automatic and dynamic allocation
