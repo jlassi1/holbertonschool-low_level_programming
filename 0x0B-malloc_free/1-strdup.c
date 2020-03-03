@@ -23,7 +23,7 @@ for (i = 0; i <= j; i++)
 {
 array[i] = str[i];
 }
-
+array[i] = '\0';
 return (array);
 
 }
