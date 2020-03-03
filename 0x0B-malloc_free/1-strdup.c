@@ -15,7 +15,7 @@ while (str[j] != '\0')
 j++;
 
 array = malloc(j *sizeof(char));
-if (j == 0 || array == NULL || size > 16711568)
+if (j == 0 || array == NULL || sizeof(str) > 16711568)
 return (NULL);
 
 
