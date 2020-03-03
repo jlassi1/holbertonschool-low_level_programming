@@ -10,14 +10,15 @@ char *_strdup(char *str)
 {
 char *array;
 unsigned int i, j = 0;
+if (str == NULL)
+return (NULL);
 
 while (str[j] != '\0')
 j++;
 
-array = malloc((j + 1) *sizeof(char));
-if (j == 0 || array == NULL)
+array = malloc((j + 1) * sizeof(char));
+if (/*j == 0 || */array == NULL)
 return (NULL);
-
 
 for (i = 0; i <= j; i++)
 {
