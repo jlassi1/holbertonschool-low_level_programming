@@ -34,7 +34,7 @@ x++;
 }
 
 
-array[l] = '\0';
+/*array[l] = '\0';*/
 return (array);
 
 }
