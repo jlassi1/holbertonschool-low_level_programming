@@ -1,11 +1,10 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-/*
- *free_grid - free a grid
+/**
+ *free_grid - frees a 2 dimensional grid
  *@grid : pointer of int
  *@height : integer
- *Return : NULL
  */
 void free_grid(int **grid, int height)
 {
