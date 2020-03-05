@@ -19,7 +19,7 @@ num = malloc(sizeof(int) * lenth);
 
 if (num == NULL)
 return (NULL);
-for (i = 0; i <= lenth; i++)
+for (i = 0; i < lenth; i++)
 num[i] = min + i;
 
 
