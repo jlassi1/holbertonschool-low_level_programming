@@ -12,20 +12,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *s3 = NULL;
 unsigned int i, j, x = 0;
-for (i = 0; s1[i] != '\0'; i++)
+for (i = 0; s1[i] != '\0'git add ; i++)
 {
 }
 if (s1 == NULL)
-s1 ="";
+s1 = "";
 if (s2 == NULL)
-s2 ="";
-s3 = malloc(sizeof(char)*(i + n + 1));
-if ( s3 == NULL)
+s2 = "";
+s3 = malloc(sizeof(char) * (i + n + 1));
+if (s3 == NULL)
 return (NULL);
 for (j = 0; j < i; j++)
 s3[j] = s1[j];
 
-for (;j < n + i; j++)
+for (; j < n + i; j++)
 {
 s3[j] = s2[x];
 x++;
