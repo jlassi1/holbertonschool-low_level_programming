@@ -19,7 +19,7 @@ num = malloc(nmemb * size);
 
 if (num == NULL)
 return (NULL);
-for (i =0 ; i < nmemb * size; i++)
+for (i = 0; i < nmemb * size; i++)
 num[i] = 0;
 
 
