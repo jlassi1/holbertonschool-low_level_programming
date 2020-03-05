@@ -30,10 +30,11 @@ return (NULL);
 for (j = 0; j < i; j++)
 s3[j] = s1[j];
 
-for (; j < n + i; j++)
+for (; j < n + i && s2[x] != '\0'; j++)
 {
 s3[j] = s2[x];
 x++;
 }
+s3[j] = '\0';
 return (s3);
 }
