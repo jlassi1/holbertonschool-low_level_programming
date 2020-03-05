@@ -15,7 +15,7 @@ int i = 0, lenth = 0;
 if (min > max)
 return (NULL);
 lenth = max - min + 1;
-num = malloc(sizeof (int) * lenth);
+num = malloc(sizeof(int) * lenth);
 
 if (num == NULL)
 return (NULL);
