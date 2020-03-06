@@ -18,14 +18,13 @@ if (old_size == new_size)
 return (ptr);
 if (old_size < new_size)
 {
-new_size = old_size + (new_size - old_size);
 free (ptr);
 ptr = malloc (new_size);
 return (ptr);
 }
-if (new_size == 0)
+if (new_size == 0 && ptr != NULL)
 {
-ptr = NULL;
+
 free(ptr);
 return (NULL);
 }
