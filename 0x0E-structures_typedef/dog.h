@@ -5,7 +5,7 @@
   *struct dog_t-new name for the type struct dog
   *@name: name of dog
   *@owner: owner of dog
-  *@age: age of god
+  *@age: age of dog
   */
 struct dog
 {
@@ -19,13 +19,13 @@ void print_dog(struct dog *d);
   *struct dog_t-new name for the type struct dog
   *@name: name of dog
   *@owner: owner of dog
-  *@age: age of god
+  *@age: age of dog
   */
-typedef struct
+typedef struct dog_t
 {
 char *name;
 char *owner;
 float age;
-} dog_t;
+};
 
 #endif
