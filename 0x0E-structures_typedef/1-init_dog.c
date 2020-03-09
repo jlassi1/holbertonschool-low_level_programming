@@ -5,7 +5,7 @@
   *init_dog-initialize a variable of type
   *@name: name of dog
   *@owner: owner of dog
-  *@age: age of god
+  *@age: age of dog
   *@d: pointer
   *Return:
   */
@@ -17,9 +17,10 @@ if (d != 0)
 (*d).name = name;
 (*d).age = age;
 (*d).owner = owner;
+
+
 }
 
-else
-return;
+
 
 }
