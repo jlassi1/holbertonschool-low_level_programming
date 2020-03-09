@@ -2,6 +2,7 @@
 #define _DOG_H_
 /**
   *struct dog-struct type
+  *struct dog_t-new name for the type struct dog
   *@name: name of dog
   *@owner: owner of dog
   *@age: age of god
@@ -14,11 +15,17 @@ float age;
 };
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-struct dog
+/**
+  *struct dog_t-new name for the type struct dog
+  *@name: name of dog
+  *@owner: owner of dog
+  *@age: age of god
+  */
+typedef struct
 {
 char *name;
 char *owner;
 float age;
-}dog_t;
+} dog_t;
 
 #endif
