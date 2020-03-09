@@ -1,23 +1,25 @@
 #include "dog.h"
 #include <stdio.h>
-
+#include "dog.h"
 /**
-  *
-  *
-  *
-  *
+  *init_dog-initialize a variable of type
+  *@name: name of dog
+  *@owner: owner of dog
+  *@age: age of god
+  *@d: pointer
+  *Return:
   */
-typedef struct 
-{
-char *name;
-char *owner;
-float age;
-}dog;
-
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
- {
-dog *d = {*name, *owner, age};
+{
+if (d != 0)
+{
+(*d).name = name;
+(*d).age = age;
+(*d).owner = owner;
+}
 
+else
+return;
 
- }
+}
