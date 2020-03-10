@@ -1,7 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
   *new_dog - creates a new dog
   *@name: name of dog
@@ -13,38 +12,35 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *d;
 int i = 0, j = 0, x, y;
-char *new_name;
-char *new_owner;
 if (name == NULL || owner == NULL)
 return (NULL);
 d = malloc(sizeof(dog_t));
 if (d ==  NULL)
 return (NULL);
-while (name[i])
+while (name[i++])
 ;
-new_name = malloc(sizeof(char) * (i + 1));
-if (new_name == NULL)
+d->name = malloc(sizeof(char) * i);
+if (d->name == NULL)
 {
 free(d);
 return (NULL);
 }
-for (x = 0; x < i; i++)
-new_name[x] = name[x];
-new_name[x] = '\0';
-while (owner[j])
+for (x = 0; x <= i; x++)
+d->name[x] = name[x];
+while (owner[j++])
 ;
-new_owner = malloc(sizeof(char) * j + 1);
-if (new_owner == NULL)
+d->owner = malloc(sizeof(char) * j);
+if (d->owner == NULL)
 {
-free(new_name);
+free(d->name);
 free(d);
 return (NULL);
 }
-for (y = 0; y < j; j++)
-new_owner[y] = owner[y];
-new_owner[y] = '\0';
-d->name = new_name;
+for (y = 0; y <= j; y++)
+d->owner[y] = owner[y];
 d->age = age;
-d->owner = new_owner;
+d->owner = owner;
+d->name = name;
 return (d);
 }
+
