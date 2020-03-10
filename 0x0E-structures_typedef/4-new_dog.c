@@ -19,27 +19,26 @@ if (d ==  NULL)
 return (NULL);
 while (name[i++])
 ;
-d->name = malloc(i + 1);
+d->name = malloc(i);
 if (d->name == NULL)
 {
 free(d);
 return (NULL);
 }
-for (x = 0; x <= i; x++)
+for (x = 0; x < i; x++)
 d->name[x] = name[x];
 while (owner[j++])
 ;
-d->owner = malloc(j + 1);
+d->owner = malloc(j);
 if (d->owner == NULL)
 {
 free(d->name);
 free(d);
 return (NULL);
 }
-for (y = 0; y <= j; y++)
+for (y = 0; y < j; y++)
 d->owner[y] = owner[y];
 d->age = age;
-
 return (d);
 }
 
