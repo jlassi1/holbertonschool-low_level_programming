@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdlib.h>
-#include <string.h>
+#include <stdio.h>
+
 /**
   *main -program that performs simple operations
   *@argc: size of argument
@@ -33,4 +34,5 @@ b = atoi(argv[3]);
 function = get_op_func((argv[2]));
 result = function(a, b);
 printf("%d\n", result);
+return (0);
 }
