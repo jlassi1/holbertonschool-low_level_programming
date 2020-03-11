@@ -7,10 +7,12 @@
   */
 int op_add(int a, int b)
 {
-return (a + b);
+int sum = 0;
+sum = a + b;
+return (sum);
 }
 /**
-  *op_sup-difference of 2 integer
+  *op_sub-difference of 2 integer
   *@a: integer
   *@b: integer
   *Return: result

@@ -17,10 +17,10 @@ op_t ops[] = {
 {NULL, NULL}
 };
 int i = 0;
-while ((ops + i)->op)
+while (ops[i].op != NULL)
 {
-if (s == (ops + i)->op)
-return ((ops + 1)->f);
+if ((*s == *(ops[i].op)) && *(s + 1) == '\0')
+return (ops[i].f);
 i++;
 }
 printf("Error\n");
