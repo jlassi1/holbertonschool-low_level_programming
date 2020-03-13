@@ -1,6 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * simple_print_buffer - prints buffer in hexa
@@ -37,15 +38,17 @@ void simple_print_buffer(char *buffer, unsigned int size)
  */
 int main(void)
 {
-    char *buffer;
+    char *p;
+    int i;
 
-    buffer = create_array(98, 'H');
-    if  (buffer == NULL)
+    p = malloc(sizeof(char) * 10);
+    p = _realloc(p, sizeof(char) * 10, sizeof(char) * 98);
+    i = 0;
+    while (i < 98)
     {
-        printf("failed to allocate memory\n");
-        return (1);
+        p[i++] = 98;
     }
-    simple_print_buffer(buffer, 98);
-    free(buffer);
+    simple_print_buffer(p, 98);
+    free(p);
     return (0);
 }
