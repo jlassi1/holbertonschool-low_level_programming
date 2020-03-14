@@ -27,8 +27,7 @@ void print_string(va_list arg)
 char *s;
 s = va_arg(arg, char *);
 if (s == NULL)
-printf("(nil)");
-else
+s = "(nil)";
 printf("%s", s);
 }
 /**
@@ -63,8 +62,7 @@ format_t type[] = {
 
 
 va_start(arg, format);
-if (format == NULL)
-return;
+
 
 while (format[k] != '\0')
 {
