@@ -11,7 +11,12 @@ void print_int(va_list arg);
 void print_float(va_list arg);
 void print_string(va_list arg);
 void print_char(va_list arg);
-
+/**
+  *struct format-struct type
+  *struct format_t-new name for the type struct format
+  *@x: indection of type
+  *@print_format: function that print format
+  */
 typedef struct format
 {
 char *x;
