@@ -27,7 +27,7 @@ printf("(nil)");
 else
 printf("%s", strg);
 if (separator == NULL ||i + 1 == n)
-break;
+continue;
 else
 printf("%s", separator);
 }
