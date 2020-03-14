@@ -48,6 +48,8 @@ printf("%c", va_arg(arg, int));
 
 void print_all(const char * const format, ...)
 {
+va_list arg;
+
 int k = 0, l = 0;
 char *coma_0 = "";
 char *coma_1 = ", ";
@@ -59,8 +61,11 @@ format_t type[] = {
 {NULL, NULL}
 };
 
-va_list arg;
+
 va_start(arg, format);
+if (format == NULL)
+return;
+
 while (format[k] != '\0')
 {
 while (type[l].x != NULL)
