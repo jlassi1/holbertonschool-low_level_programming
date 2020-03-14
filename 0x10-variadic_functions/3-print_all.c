@@ -49,7 +49,7 @@ void print_all(const char * const format, ...)
 {
 va_list arg;
 
-int k = 0, l = 0;
+unsigned int k = 0, l = 0;
 char *coma_0 = "";
 char *coma_1 = ", ";
 format_t type[] = {
@@ -76,8 +76,10 @@ coma_0 = coma_1;
 }
 l++;
 }
-k++;
+
 l = 0;
+k++;
+
 }
 printf("\n");
 va_end(arg);
