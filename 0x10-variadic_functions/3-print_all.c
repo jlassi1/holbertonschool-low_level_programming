@@ -64,7 +64,7 @@ format_t type[] = {
 va_start(arg, format);
 
 
-while (format[k] != '\0' && format == NULL)
+while (format[k] != '\0' && format != NULL)
 {
 while (type[l].x != NULL)
 {
