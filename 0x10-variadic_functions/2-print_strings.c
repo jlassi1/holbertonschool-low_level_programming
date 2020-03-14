@@ -21,7 +21,7 @@ for (i = 0; i < n; i++)
 {
 strg = va_arg(arg, char *);
 
-if (separator == NULL || i + 1 == n)
+if (separator == NULL && i + 1 == n)
 printf("%s", strg);
 
 if (strg == NULL && i != n - 1)

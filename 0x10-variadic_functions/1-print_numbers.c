@@ -20,11 +20,10 @@ unsigned int i;
 va_start(arg, n);
 
 
-
 for (i = 0; i < n; i++)
 {
 num[i] = va_arg(arg, const int);
-if (separator == NULL && i == n - 1)
+if (separator == NULL || i == n - 1)
 printf("%d", num[i]);
 else
 printf("%d%s", num[i], separator);
