@@ -17,6 +17,7 @@ unsigned int i;
 
 va_list arg;
 va_start(arg, n);
+
 for (i = 0; i < n; i++)
 {
 strg = va_arg(arg, char *);
@@ -24,10 +25,10 @@ strg = va_arg(arg, char *);
 if (separator == NULL && i + 1 == n)
 printf("%s", strg);
 
-if (strg == NULL && i != n - 1)
+else if (strg == NULL && i != n - 1)
 printf("(nil)%s", separator);
 
-if (strg != NULL && separator != NULL && i + 1 != n)
+else if (strg != NULL && separator != NULL && i + 1 != n)
 printf("%s%s", strg, separator);
 }
 printf("\n");
