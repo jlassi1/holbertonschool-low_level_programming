@@ -49,7 +49,7 @@ void print_all(const char * const format, ...)
 {
 va_list arg;
 
-unsigned int k = 0, l = 0;
+unsigned int k = 0, l;
 char *coma_0 = "";
 char *coma_1 = ", ";
 format_t type[] = {
@@ -66,6 +66,7 @@ va_start(arg, format);
 
 while (format[k] != '\0' && format != NULL)
 {
+l = 0;
 while (type[l].x != NULL)
 {
 if (format[k] == *(type[l].x))
@@ -76,8 +77,6 @@ coma_0 = coma_1;
 }
 l++;
 }
-
-l = 0;
 k++;
 
 }
