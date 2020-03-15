@@ -72,7 +72,7 @@ if (format[k] == type[l].x)
 printf("%s", coma_0);
 (type[l].print_format)(arg);
 coma_0 = coma_1;
-break;
+
 }
 l++;
 }
