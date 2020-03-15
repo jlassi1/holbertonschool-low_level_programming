@@ -49,36 +49,35 @@ void print_all(const char * const format, ...)
 {
 va_list arg;
 
-unsigned int k = 0, l;
+unsigned int k = 0, l = 0;
 char *coma_0 = "";
 char *coma_1 = ", ";
 format_t type[] = {
-{"c", print_char},
-{"i", print_int},
-{"f", print_float},
-{"s", print_string},
-{NULL, NULL}
+{'c', print_char},
+{'i', print_int},
+{'f', print_float},
+{'s', print_string},
+{'\0', NULL}
 };
 
 
 va_start(arg, format);
 
-
 while (format[k] != '\0' && format != NULL)
 {
-l = 0;
-while (type[l].x != NULL)
+while (type[l].x != '\0')
 {
-if (format[k] == *(type[l].x))
+if (format[k] == type[l].x)
 {
 printf("%s", coma_0);
 (type[l].print_format)(arg);
 coma_0 = coma_1;
+break;
 }
 l++;
 }
 k++;
-
+l = 0;
 }
 printf("\n");
 va_end(arg);
