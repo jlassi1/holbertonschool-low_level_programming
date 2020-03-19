@@ -9,25 +9,17 @@
   */
 size_t print_list(const list_t *h)
 {
-char *s = h->str;
-unsigned int x = h->len, i = 1;
+size_t i = 0;
 
-if (s == NULL)
+while (h != NULL)
 {
-s = "(nil)";
-x = 0;
-}
-printf("[%d] %s\n", x, s);
+if (h->str == NULL)
+printf("[0] (nil)\n");
+else
+printf("[%u] %s\n", h->len, h->str);
 
-list_t *next = h->next;
-while (h->next != NULL)
-{
-s = next->str;
-x = next->len;
-printf("[%d] %s\n", x, s);
+h = h->next;
 i++;
-h = next;
 }
-
 return (i);
 }
