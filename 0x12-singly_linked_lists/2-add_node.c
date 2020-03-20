@@ -17,11 +17,12 @@ return (NULL);
 node->str = strdup(str);
 while (str[i] != '\0')
 i++;
-
 node->len = i;
+
 node->next = *head;
+
 *head = node;
 
-return (*head);
+return (node);
 
 }
