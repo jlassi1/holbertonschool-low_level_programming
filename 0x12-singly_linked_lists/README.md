@@ -1,13 +1,13 @@
 
 # Singly linked lists
 
-##When and why using linked lists vs arrays
+## When and why using linked lists vs arrays
     
 Array is a datatype which is widely implemented as a default type, in almost all the modern programming languages, and is used to store data of similar type.
 
 But there are many usecases, like the one where we don't know the quantity of data to be stored, for which advanced data structures are required, and one such data structure is linked list.
 
-##How to build and use linked list
+## How to build and use linked list
  
 Well, they are connected through pointers. Usually a block in a linked list is represented through a structure like this :
 
