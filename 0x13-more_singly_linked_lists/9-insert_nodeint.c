@@ -17,12 +17,20 @@ if (new_node == NULL)
 return (NULL);
 temp = *head;
 
+if (idx == 0)
+{
+new_node->next = *head;
+new_node->n = n;
+*head = new_node;
+}
+
 while (temp != NULL && temp->next != NULL)
 {
 temp = temp->next;
 i++;
 
-if (i == idx - 1 && idx != 0)
+
+if (i == idx - 1)
 {
 new_node->next = temp->next;
 new_node->n = n;
