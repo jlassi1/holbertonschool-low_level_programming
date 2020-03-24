@@ -11,7 +11,7 @@ size_t n = 0;
 
 while (h != NULL)
 {
-printf("%u\n", h->n);
+printf("%d\n", h->n);
 h = h->next;
 n++;
 }
