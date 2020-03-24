@@ -18,8 +18,8 @@ return (x);
 node = malloc(sizeof(listint_t));
 if (node == NULL)
 return (x);
-temp = *head;
 
+temp = *head;
 if (index == 0)
 {
 temp = temp->next;
@@ -29,18 +29,18 @@ free(*head);
 return (-x);
 }
 
-while (temp != NULL && temp->next != NULL)
+while (temp != NULL || temp->next != NULL)
 {
-temp = temp->next;
-i++;
 if (i == index - 1)
 {
-node = temp;
+//node = temp;
 temp = temp->next;
 node->next = temp->next;
 free(temp);
 return (-x);
 }
+temp = temp->next;
+i++;
 }
 
 return (x);
