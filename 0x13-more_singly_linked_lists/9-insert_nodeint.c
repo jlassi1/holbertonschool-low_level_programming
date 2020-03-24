@@ -41,5 +41,5 @@ i++;
 if (idx - 1 > i)
 return (NULL);
 
-return (temp);
+return (new_node);
 }
