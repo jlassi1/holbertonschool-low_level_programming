@@ -13,10 +13,10 @@ listint_t *temp;
 unsigned int i = 0;
 
 new_node = malloc(sizeof(listint_t));
-if (new_node == NULL)
+if (new_node == NULL || *head == NULL)
 return (NULL);
 
-if (idx == 0 && *head ==  NULL)
+if (idx == 0)
 {
 new_node->next = *head;
 new_node->n = n;
