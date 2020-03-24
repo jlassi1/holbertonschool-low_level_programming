@@ -40,8 +40,7 @@ return (new_node);
 temp = temp->next;
 i++;
 }
-if (idx - 1 > i)
-return (NULL);
+
 
 return (NULL);
 }
