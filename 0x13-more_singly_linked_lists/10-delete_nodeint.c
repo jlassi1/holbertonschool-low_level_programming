@@ -24,9 +24,9 @@ if (index == 0)
 {
 temp = temp->next;
 
-free (*head);
+free(*head);
 *head = temp;
-return(-x);
+return (-x);
 }
 
 while (temp != NULL && temp->next != NULL)
@@ -38,8 +38,8 @@ if (i == index - 1)
 node = temp;
 temp = temp->next;
 node->next = temp->next;
-free (temp);
-x = 1;
+free(temp);
+return (-x);
 }
 }
 
