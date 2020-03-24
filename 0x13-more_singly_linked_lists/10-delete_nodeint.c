@@ -15,18 +15,12 @@ int x = -1;
 if (*head == NULL)
 return (x);
 
-/*node = *head;
-if (node == NULL)
-return (x);*/
-
-
 temp = *head;
 if (index == 0)
 {
 *head = temp->next;
-
 free(temp);
-//*head = temp;
+
 return (-x);
 }
 
@@ -36,11 +30,11 @@ node = temp;
 temp = temp->next;
 i++;
 }
+
 if (i < index)
 return (x);
 
 node->next = temp->next;
 free(temp);
 return (-x);
-
 }
