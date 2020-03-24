@@ -12,6 +12,9 @@ listint_t *new_node;
 listint_t *temp;
 unsigned int i = 0;
 
+if (head == NULL)
+return (NULL);
+
 new_node = malloc(sizeof(listint_t));
 if (new_node == NULL)
 return (NULL);
@@ -26,9 +29,6 @@ new_node->n = n;
 
 while (temp != NULL && temp->next != NULL)
 {
-temp = temp->next;
-i++;
-
 
 if (i == idx - 1)
 {
@@ -37,6 +37,8 @@ new_node->n = n;
 temp->next = new_node;
 }
 
+temp = temp->next;
+i++;
 }
 
 return (NULL);
