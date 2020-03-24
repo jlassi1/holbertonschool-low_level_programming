@@ -15,34 +15,32 @@ int x = -1;
 if (*head == NULL)
 return (x);
 
-node = malloc(sizeof(listint_t));
+/*node = *head;
 if (node == NULL)
-return (x);
+return (x);*/
+
 
 temp = *head;
 if (index == 0)
 {
-temp = temp->next;
+*head = temp->next;
 
-free(*head);
-*head = temp;
-return (-x);
-}
-
-while (temp != NULL || temp->next != NULL)
-{
-if (i == index - 1)
-{
-//node = temp;
-temp = temp->next;
-node->next = temp->next;
 free(temp);
+//*head = temp;
 return (-x);
 }
+
+while (i < index && temp->next != NULL)
+{
+node = temp;
 temp = temp->next;
 i++;
 }
-
+if (i < index)
 return (x);
+
+node->next = temp->next;
+free(temp);
+return (-x);
 
 }
