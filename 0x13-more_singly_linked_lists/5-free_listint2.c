@@ -16,6 +16,6 @@ node = (*head)->next;
 free(*head);
 *head = node;
 }
-*head =  NULL;
+//*head =  NULL;
 }
 }
