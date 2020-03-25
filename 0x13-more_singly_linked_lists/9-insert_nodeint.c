@@ -26,7 +26,7 @@ return (new_node);
 
 temp = *head;
 
-while (temp != NULL )//|| temp->next != NULL)
+while (temp != NULL)
 {
 
 if (i == idx - 1)
