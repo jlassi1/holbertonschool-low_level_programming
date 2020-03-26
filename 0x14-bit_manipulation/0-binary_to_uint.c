@@ -17,13 +17,13 @@ unsigned int num = 0, binary = 1;
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
 	}
-	
+	i--;
 	while (i >= 0)
 	{
 		if (b[i] == '1')
 			num = num + binary;
 		binary = binary * 2;
-		--i;
+		i--;
 	}
 	return (num);
 }
