@@ -9,7 +9,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int fo, fr, fw;
+ssize_t fo, fr, fw;
 
 void *buf;
 
@@ -22,19 +22,24 @@ void *buf;
 	fo = open(filename, O_RDWR);
 		if (fo == -1)
 		{
+			free(buf);
 			return (0);
 		}
 	fr = read(fo, buf, letters);
 		if (fr == -1)
 		{
+			free(buf);
 			return (0);
 		}
 
 	fw = write(1, buf, letters);
 		if (fw == -1)
 		{
+			free(buf);
 			return (0);
 		}
+		if (fw != fr)
+		fw = fr + 1;
 	free(buf);
 	close(fo);
 
