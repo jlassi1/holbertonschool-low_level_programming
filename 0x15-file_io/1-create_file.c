@@ -16,7 +16,7 @@ int fo, i = 0;
 		if (filename == NULL)
 			return (-1);
 
-	fo = open(filename, O_RDWR | O_CREAT, 0600);
+	fo = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 		if (fo == -1)
 			return (-1);
 
