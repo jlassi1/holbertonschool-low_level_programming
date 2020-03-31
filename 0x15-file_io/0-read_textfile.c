@@ -21,16 +21,23 @@ void *buf;
 
 	fo = open(filename, O_RDWR);
 		if (fo == -1)
+		{
+			free(buf);
 			return (0);
-
+		}
 	fr = read(fo, buf, letters);
 		if (fr == -1)
+		{
+			free(buf);
 			return (0);
+		}
 
-	fw = write(3, buf, letters);
+	fw = write(1, buf, letters);
 		if (fw == -1)
+		{
+			free(buf);
 			return (0);
-
+		}
 	free(buf);
 	close(fo);
 
