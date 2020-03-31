@@ -32,6 +32,7 @@ void *buf;
 			return (0);
 
 	free(buf);
+	close(fo);
 
 return (fw);
 }
