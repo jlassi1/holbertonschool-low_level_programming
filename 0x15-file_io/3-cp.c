@@ -34,7 +34,7 @@ dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 fd = open(av[1], O_RDONLY);
 if (fd == -1)
 file_from(av[1]);
-fo = open(av[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
+fo = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 if (fo == -1)
 file_to(av[2]);
 while (rd == 1024)
