@@ -9,7 +9,7 @@ dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", f1);
 exit(98);
 }
 /**
- *file_to- messege d'error for file2
+ *file_to - messege d'error for file2
  *@f2: new file
  */
 void file_to(char *f2)
@@ -31,7 +31,7 @@ char buf[1024];
 if (ac != 3)
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 
-fd = open(av[1], O_RDWR);
+fd = open(av[1], O_RDONLY);
 if (fd == -1)
 file_from(av[1]);
 fo = open(av[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
