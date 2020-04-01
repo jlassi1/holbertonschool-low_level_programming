@@ -27,7 +27,7 @@ char *buf;
 		if (fr == -1)
 			return (0);
 
-	fw = write(1, buf, fr);
+	fw = write(STDOUT_FILENO, buf, fr);
 		if (fw == -1)
 			return (0);
 
