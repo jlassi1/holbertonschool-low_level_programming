@@ -22,7 +22,6 @@ newnode->prev = NULL;
 	{
 		newnode->n = n;
 		newnode->next = (*h);
-		newnode->prev = NULL;
 		(*h) = newnode;
 		return (newnode);
 	}
@@ -30,11 +29,12 @@ newnode->prev = NULL;
 	{
 		i++;
 
-		if (i == idx - 1)
+		if (i == idx)
 		{
 			newnode->next = tmp->next;
 			newnode->n = n;
 			tmp->next = newnode;
+			newnode->prev = tmp;
 			return (newnode);
 
 		}
