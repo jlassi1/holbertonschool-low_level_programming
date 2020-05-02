@@ -25,23 +25,25 @@ newnode->prev = NULL;
 	}
 	while (tmp)
 	{
-		i++;
 
-		if (i == idx)
+
+		if (i == idx - 1)
 		{
+
 			newnode->next = tmp->next;
 			newnode->n = n;
-			tmp->next = newnode;
-			if (newnode->prev != NULL)
-				newnode->next->prev = newnode;
+			newnode->prev = tmp;
 
+			tmp->next = newnode;
+
+			if (newnode->next != NULL)
+				newnode->next->prev = newnode;
 
 			return (newnode);
 
 		}
-
+		i++;
 		tmp = tmp->next;
-
 	}
 
 return (NULL);
