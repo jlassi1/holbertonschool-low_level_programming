@@ -32,7 +32,10 @@ newnode->prev = NULL;
 			newnode->next = tmp->next;
 			newnode->n = n;
 			tmp->next = newnode;
-			newnode->prev = tmp;
+			if (newnode->prev != NULL)
+				newnode->next->prev = newnode;
+
+
 			return (newnode);
 
 		}
