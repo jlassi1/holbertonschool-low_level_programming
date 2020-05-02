@@ -20,9 +20,7 @@ newnode->prev = NULL;
 
 	if (idx == 0)
 	{
-		newnode->n = n;
-		newnode->next = (*h);
-		(*h) = newnode;
+		newnode = add_dnodeint(h, n);
 		return (newnode);
 	}
 	while (tmp)
