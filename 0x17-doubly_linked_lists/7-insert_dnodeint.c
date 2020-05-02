@@ -28,7 +28,7 @@ newnode->prev = NULL;
 	}
 	while (tmp)
 	{
-
+		i++;
 
 		if (i == idx - 1)
 		{
@@ -40,7 +40,7 @@ newnode->prev = NULL;
 		}
 
 		tmp = tmp->next;
-		i++;
+
 	}
 
 return (NULL);
