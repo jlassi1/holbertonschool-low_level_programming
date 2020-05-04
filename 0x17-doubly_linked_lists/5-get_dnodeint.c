@@ -12,15 +12,13 @@ unsigned int i = 0;
 dlistint_t *tmp = head;
 	if (head == NULL)
 		return (NULL);
-	if (index == 0)
-		return (tmp);
 	while (tmp)
 	{
-		tmp = head->next;
-		head = tmp;
-		i++;
+
 		if (i == index)
 			return (tmp);
+		tmp = head->next;
+		i++;
 	}
 
 return (NULL);

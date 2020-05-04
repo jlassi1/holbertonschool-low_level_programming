@@ -14,7 +14,6 @@ while (head->next != NULL)
 {
 sum += head->n;
 head = head->next;
-
 }
 sum += head->n;
 return (sum);

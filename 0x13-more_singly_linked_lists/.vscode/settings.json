@@ -1,0 +1,8 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "5-MAIN.C": "cpp",
+        "lists.h": "c"
+    },
+    "editor.tabSize": 8
+}

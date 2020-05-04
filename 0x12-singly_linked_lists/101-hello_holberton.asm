@@ -10,11 +10,11 @@ fmt:    db "%s", 10
 
         global main
 main:
-    mov  rsi, msg
+        mov  rsi, msg
 	mov  rdi, fmt
 	mov  rax, 0
 	call printf
 
-	mov eax, 0
+	mov rax, 0
 	ret
 

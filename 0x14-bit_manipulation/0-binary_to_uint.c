@@ -14,7 +14,7 @@ unsigned int num = 0, binary = 1;
 		return (0);
 	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[i] != '0' && b[i] != '1')
+		if (b[i] != '0' && b[i] !=      '1')
 			return (0);
 	}
 	i--;

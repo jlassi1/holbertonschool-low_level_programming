@@ -15,8 +15,8 @@
  */
 typedef struct listint_s
 {
-int n;
 struct listint_s *next;
+int n;
 } listint_t;
 /*mandatory tasks*/
 size_t print_listint(const listint_t *h);

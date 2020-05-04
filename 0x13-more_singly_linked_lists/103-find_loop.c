@@ -16,7 +16,9 @@ slow_p = slow_p->next;
 fast_p = fast_p->next->next;
 if (slow_p == fast_p)
 {
+
 slow_p = head;
+
 while (slow_p != fast_p)
 {
 			slow_p = slow_p->next;

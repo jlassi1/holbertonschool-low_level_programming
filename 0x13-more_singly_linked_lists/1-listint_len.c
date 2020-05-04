@@ -16,5 +16,5 @@ h = h->next;
 n++;
 }
 return (n);
-
 }
+

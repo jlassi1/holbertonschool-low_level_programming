@@ -16,7 +16,6 @@ return (head);
 head = head->next;
 n++;
 }
-
 return (NULL);
 
 }
