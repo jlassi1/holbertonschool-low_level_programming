@@ -23,6 +23,7 @@ tmp = ht->array[index];
 	{
 		if (strcmp(key, tmp->key) == 0)
 		{
+			free(tmp->value);
 			tmp->value = strdup(value);
 			return (1);
 		}

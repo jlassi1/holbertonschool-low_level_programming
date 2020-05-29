@@ -1,0 +1,11 @@
+#ifndef _SUM_H_
+#define _SUM_H_
+
+
+#define SUM(x, y) (x + y)
+#define SUB(x, y) (x - y)
+#define MUL(x, y) (x * y)
+#define DIV(x, y) (y != 0)?  (x / y))
+#define  ABS(x) ((x < 0) ? (-(x)) : (x))
+
+#endif
