@@ -28,4 +28,4 @@ unsigned long int x;
 		tab->array[x] = NULL;
 
 return (tab);
-
+}
