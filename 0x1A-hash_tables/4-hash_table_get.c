@@ -19,12 +19,9 @@ node = ht->array[index];
 
 	while (node != NULL)
 	{
-		if (strcmp(node->key, key) == 0)
-		{
+		if (node->key && strcmp(node->key, key) == 0)
 			return (node->value);
-		}
-		else
-			node = node->next;
+	    node = node->next;
 	}
 
 return (NULL);
