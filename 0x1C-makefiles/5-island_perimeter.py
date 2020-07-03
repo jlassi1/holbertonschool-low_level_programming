@@ -13,10 +13,11 @@ def island_perimeter(grid):
         for j in i:
             if j == 1:
                 width += 1
-                if j + 1 == 0:
-                    break
+
         if width != 0:
             heigth += 1
+        if width == 0 and heigth != 0:
+            break
         if max_width < width:
             max_width = width
         width = 0
