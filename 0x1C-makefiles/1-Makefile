@@ -1,0 +1,4 @@
+SRC = *.c
+CC  = /usr/local/bin/gcc
+all:
+	gcc main.c holberton.c -o holberton
