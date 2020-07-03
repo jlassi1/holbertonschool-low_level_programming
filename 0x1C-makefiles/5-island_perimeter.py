@@ -9,9 +9,11 @@ def island_perimeter(grid):
     max_width = 0
     width = 0
     heigth = 0
+    x = 0
     if not grid:
         return 0
-
+    if len(grid[0]) > 100 or len(grid) > 100:
+        return
     for i in grid:
         width = 0
         for j in i:
