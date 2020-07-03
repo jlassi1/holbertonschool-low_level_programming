@@ -11,7 +11,9 @@ def island_perimeter(grid):
     heigth = 0
     if not grid:
         return 0
+
     for i in grid:
+        width = 0
         for j in i:
             if j == 1:
                 width += 1
@@ -22,5 +24,5 @@ def island_perimeter(grid):
             break
         if max_width < width:
             max_width = width
-        width = 0
+
     return (max_width + heigth) * 2
