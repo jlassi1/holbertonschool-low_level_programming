@@ -1,4 +1,4 @@
-SRC = *.c
-CC  = /usr/local/bin/gcc
+SRC = main.c holberton.c
+CC  = gcc
 all:
-	gcc main.c holberton.c -o holberton
+	$(CC) $(SRC) -o holberton
