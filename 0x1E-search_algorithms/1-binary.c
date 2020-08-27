@@ -42,7 +42,7 @@ while (x <= y)
 {
 
 	idx = ((x + y) / 2);
-	print_array(array + x, y - x + 1);
+	/*print_array(array + x, y - x + 1);*/
 	if (array[idx] < value)
 		x = idx + 1;
 	else if (array[idx] > value)
